@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,12 +13,149 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeClasses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any, Any" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDy-qQ-nfh">
+                                <rect key="frame" x="118" y="157" width="500" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="9KV-Pp-YRN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Pbc-0D-thG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="YsZ-e5-TGE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="ui6-Ne-mag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YsZ-e5-TGE"/>
+                                        <exclude reference="ui6-Ne-mag"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ui6-Ne-mag"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="YsZ-e5-TGE"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u71-qH-87x">
+                                <rect key="frame" x="626" y="61" width="88" height="88"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="o9J-L7-rbz"/>
+                                    <constraint firstAttribute="height" constant="88" id="ozy-98-d0H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="o9J-L7-rbz"/>
+                                        <exclude reference="ozy-98-d0H"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="o9J-L7-rbz"/>
+                                        <include reference="ozy-98-d0H"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnE-wk-wht">
+                                <rect key="frame" x="55" y="586" width="44" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="280-MZ-SMa"/>
+                                    <constraint firstAttribute="height" constant="44" id="hNr-cY-h1T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="280-MZ-SMa"/>
+                                        <exclude reference="hNr-cY-h1T"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="280-MZ-SMa"/>
+                                        <include reference="hNr-cY-h1T"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WnE-wk-wht" firstAttribute="top" secondItem="CDy-qQ-nfh" secondAttribute="bottom" constant="8" id="8ba-ty-ZnC"/>
+                            <constraint firstItem="CDy-qQ-nfh" firstAttribute="top" secondItem="WnE-wk-wht" secondAttribute="bottom" constant="8" id="Bf5-gu-42B"/>
+                            <constraint firstItem="CDy-qQ-nfh" firstAttribute="leading" secondItem="WnE-wk-wht" secondAttribute="trailing" constant="8" id="Lnv-Fa-mxB"/>
+                            <constraint firstItem="u71-qH-87x" firstAttribute="top" secondItem="CDy-qQ-nfh" secondAttribute="bottom" constant="8" id="Vn2-Uv-82V"/>
+                            <constraint firstItem="u71-qH-87x" firstAttribute="leading" secondItem="CDy-qQ-nfh" secondAttribute="trailing" constant="8" id="fSU-OU-XCq"/>
+                            <constraint firstItem="CDy-qQ-nfh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="v1S-zZ-dUS"/>
+                            <constraint firstItem="CDy-qQ-nfh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xvl-FV-AV4"/>
+                            <constraint firstItem="CDy-qQ-nfh" firstAttribute="top" secondItem="u71-qH-87x" secondAttribute="bottom" constant="8" id="yNC-mn-ou8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="u71-qH-87x"/>
+                                <exclude reference="WnE-wk-wht"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Bf5-gu-42B"/>
+                                <exclude reference="Lnv-Fa-mxB"/>
+                                <exclude reference="yNC-mn-ou8"/>
+                                <exclude reference="8ba-ty-ZnC"/>
+                                <exclude reference="Vn2-Uv-82V"/>
+                                <exclude reference="fSU-OU-XCq"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="WnE-wk-wht"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Lnv-Fa-mxB"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="u71-qH-87x"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="fSU-OU-XCq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Bf5-gu-42B"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="yNC-mn-ou8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="8ba-ty-ZnC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Vn2-Uv-82V"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
